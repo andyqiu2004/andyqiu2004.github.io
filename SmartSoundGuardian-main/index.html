@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Sound Guardian - 物联网语音安全领航者</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Smart Sound Guardian</h1>
+            <h2>物联网语音安全领航者</h2>
+            <h4><center>2024年"中国高校计算机大赛-网络技术挑战赛" 作品</h4>
+            <nav>
+                <ul>
+                    <li><a href="#introduction" class="smooth-scroll">项目背景</a></li>
+                    <li><a href="#features" class="smooth-scroll">核心功能</a></li>
+                    <li><a href="#results" class="smooth-scroll">研究成果</a></li>
+                    <li><a href="#chan" class="smooth-scroll">产学研一体</a></li>
+                    <li><a href="#video-explanation" class="smooth-scroll">系统介绍视频</a></li>
+                    <li><a href="#contact" class="smooth-scroll">联系我们</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="introduction" class="introduction">
+            <h3>项目背景</h3>
+            <p>
+                在当前5G通信技术和边缘计算技术迅猛发展的背景下，我们正迈向一个更加完美的物联网时代。随着物联网技术的普及，智能语音市场规模也在逐年扩大，“语音控制”这个概念已经深入人心，广泛应用于各个领域。然而，伴随而来的不仅仅是便利，也带来了新的安全威胁——智能语音攻击。
+            </p>
+            <p>
+                智能语音攻击是指恶意攻击者通过无声远程操控的方式，侵入智能设备的语音控制系统。这种攻击方式难以识别、难以预知，且具有高度的隐蔽性，可能导致严重的后果，如窃取个人隐私、造成财产损失，甚至威胁生命安全。令人担忧的是，现有的智能语音助手在面对智能语音攻击的安全性测试中表现不佳，所有测试通过率为0。
+            </p>
+            <div class="image-container">
+                <img src="images/background.png" alt="项目背景">
+            </div>
+        </section>
+        
+        
+        <section id="problem" class="problem">
+            <h3>语音攻击带来的挑战</h3>
+            <ul>
+                <li><strong>隐私泄露：</strong> 智能语音设备可能被攻击者利用，窃取用户的个人隐私信息。</li>
+                <li><strong>财产损失：</strong> 恶意攻击可能导致语音控制的支付功能被滥用，造成用户的财产损失。</li>
+                <li><strong>安全威胁：</strong> 通过侵入智能家居和车载系统，攻击者可能危及用户的生命安全。</li>
+            </ul>
+            <div class="image-container">
+                <img src="images/attack.png" alt="攻击挑战">
+            </div>
+            <p>
+                智能语音攻击的识别难度极大，传统的防御手段在面对这些新型威胁时显得力不从心。因此，我们迫切需要一个更加智能化且有效的解决方案，以应对这些新的安全挑战。
+            </p>
+        </section>
+        
+
+        <section id="solution" class="solution">
+            <h3>Smart Sound Guardian 的解决方案</h3>
+            <p>
+                针对现有语音攻击防御中的【识别精度低】、【无法提供预警】、【难溯攻击源】等缺陷，我们提出并设计了Smart Sound Guardian系统。该系统结合了多维语音特征提取、语义分析、实时数据监测和机器学习算法，提供了以下核心功能：
+            </p>
+            <ul>
+                <li><strong>智能语音攻击检测模型：</strong> 通过基于SVM的音频分类算法，利用频率、能量和波动性等特征对用户音频进行多维度分析，检测并过滤攻击语音。</li>
+                <li><strong>群智感知搜集监测平台：</strong> 通过本地储存和感知任务的实时监测，解决数据搜集难、涉及隐私的痛点，全面升级智能语音安全生态。</li>
+                <li><strong>攻击态势识别预警提醒：</strong> 基于CAM映射和GRU时序模型，实时标记攻击高危区域，并预测潜在攻击态势，及时发出预警。</li>
+            </ul>
+            <div class="image-container">
+                <img src="images/solution.png" alt="解决方案示意图">
+            </div>
+        </section>
+        
+        
+        <section id="features" class="features">
+            <h3>系统核心技术</h3>
+            <p>
+                Smart Sound Guardian系统通过三大核心技术模块，构建了完整的语音攻击防御体系：
+            </p>
+            <ul>
+                <li><strong>基于SVM的音频分类算法：</strong> 我们通过提取音频的频率、能量和波动性等特征，并利用SVM分类器，将用户音频分为正常音频、超声波攻击、模糊指令攻击和机器学习攻击四类。</li>
+                <li><strong>群智感知预警模式：</strong> 针对语音攻击数据搜集难、涉及隐私的痛点，我们通过本地储存、实时监测和群智感知的方式，有效提升了语音安全的覆盖面和预警能力。</li>
+                <li><strong>攻击态势识别预测模型：</strong> 通过应用CAM映射标记攻击关键区域，并结合GRU时序模型预测高危范围，实现了精准的攻击态势识别和预警。</li>
+            </ul>
+            <div class="image-container2">
+                <img src="images/technical1.png" alt="系统核心技术">
+                <img src="images/technical2.png" alt="系统核心技术">
+                <img src="images/technical3.png" alt="系统核心技术">
+            </div>
+        </section>
+        
+        
+        <section id="results" class="results">
+            <h3>研究成果与应用</h3>
+            <p>
+                经过多次实验验证，Smart Sound Guardian系统表现出了卓越的性能，以下是我们的研究成果：
+            </p>
+            <ul>
+                <li><strong>高识别率：</strong> 实验结果显示，系统在检测语音攻击时的平均准确率达到了88.7%，最高准确率达到了96.2%。</li>
+                <li><strong>低误报率：</strong> 通过优化模型，系统的误报率维持在5%以下，大幅降低了误报警告的发生率。</li>
+                <li><strong>可视化工具：</strong> 系统集成了智能语音态势可视化功能，帮助用户实时了解当前的安全状态，并对潜在威胁作出及时响应。</li>
+            </ul>
+            <div class="image-container">
+                <img src="images/result.png" alt="研究成果概览">
+            </div>
+        </section>
+        
+
+        <section id="chan" class="chan">
+            <h3>产学研一体</h3>
+            <p>
+                我们的Smart Sound Guardian项目不仅在学术上取得了重要突破，还在实际应用中得到了验证。我们已经申请了两项软件著作权，并完成了一篇学术论文的投稿，同时正在申请一项国家发明专利。
+            </p>
+            <p>
+                该项目已成功入选国家级大学生创新创业计划，并在武汉鸣鸾公司进行了实地部署，取得了良好的应用效果。同时，我们与未知比特团队建立了合作，共同推动该项目的进一步研发和应用。
+            </p>
+            <div class="image-container">
+                <img src="images/chan.png" alt="产学研一体">
+            </div>
+        </section>
+        
+        
+        <section id="video-explanation" class="video-explanation">
+            <h3>系统介绍视频</h3>
+            <p>观看以下视频，了解Smart Sound Guardian系统的工作原理和核心功能。</p>
+            <div class="video-container">
+                <video controls>
+                    <source src="video/Smart.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放，请升级您的浏览器或使用支持HTML5的浏览器。
+                </video>
+            </div>
+        </section>
+
+        
+        <section id="contact" class="contact">
+            <h3>联系我们</h3>
+            <p>如需了解更多信息或有合作意向，欢迎通过以下方式联系我们：</p>
+            <form id="contactForm">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">邮箱:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">留言:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">发送</button>
+            </form>
+        </section>
+
+         <footer>
+            <p>&copy; 2024 Smart Sound Guardian | 物联网语音安全领航者</p>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
