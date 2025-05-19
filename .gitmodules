@@ -1,0 +1,3 @@
+[submodule "SmartSoundGuardian"]
+	path = SmartSoundGuardian
+	url = https://github.com/1NormalGuy/SmartSoundGuardian.git
