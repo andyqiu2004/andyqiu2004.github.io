@@ -606,10 +606,7 @@ main {
 }
 
 .award-list div {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 20px;
-  align-items: start;
+  display: block;
 }
 
 .award-list strong {
@@ -620,11 +617,11 @@ main {
 }
 
 .award-list span {
+  margin-left: 0.25em;
   color: var(--warm);
   font-size: 0.76rem;
   font-weight: 800;
   line-height: 1.55;
-  text-align: right;
 }
 
 .footer {
@@ -664,14 +661,6 @@ main {
     font-size: 0.8rem;
   }
 
-  .award-list div {
-    grid-template-columns: 1fr;
-    gap: 4px;
-  }
-
-  .award-list span {
-    text-align: left;
-  }
 }
 
 @media (max-width: 720px) {
