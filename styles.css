@@ -409,6 +409,7 @@ main {
 .award-list {
   padding: 0;
   margin: 0;
+  border: 0;
   list-style: none;
 }
 
@@ -589,24 +590,23 @@ main {
   text-decoration: none;
 }
 
-.award-list {
-  border-top: 1px solid var(--line-dark);
-}
-
 .award-list li {
   display: grid;
-  grid-template-columns: 80px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 20px;
+  align-items: start;
   padding: 17px 0;
-  border-bottom: 1px solid var(--line);
+  border: 0;
 }
 
 .award-list time {
   padding-top: 2px;
+  text-align: right;
 }
 
 .award-list div {
   display: block;
+  min-width: 0;
 }
 
 .award-list strong {
@@ -617,7 +617,7 @@ main {
 }
 
 .award-list span {
-  margin-left: 0.25em;
+  margin-right: 0.35em;
   color: var(--warm);
   font-size: 0.76rem;
   font-weight: 800;
@@ -804,9 +804,12 @@ main {
     height: 40px;
   }
 
-  .news-list li,
-  .award-list li {
+  .news-list li {
     grid-template-columns: 68px minmax(0, 1fr);
+    gap: 13px;
+  }
+
+  .award-list li {
     gap: 13px;
   }
 
