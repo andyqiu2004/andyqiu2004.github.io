@@ -199,24 +199,11 @@ a {
 }
 
 .profile__photo-frame {
-  position: relative;
   overflow: hidden;
   width: 220px;
   aspect-ratio: 1 / 1.15;
   margin: 0 auto 24px;
-  background: #edf1f2;
-  border: 1px solid var(--line-dark);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-}
-
-.profile__photo-frame::after {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  content: "";
-  border: 8px solid rgba(255, 255, 255, 0.7);
-  border-radius: inherit;
+  border-radius: 4px;
 }
 
 .profile__photo {
