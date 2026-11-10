@@ -223,9 +223,9 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 54%;
+  object-position: 45% 50%;
   transform: scale(1.22);
-  transform-origin: 50% 59%;
+  transform-origin: 50% 65%;
 }
 
 .profile__eyebrow,
