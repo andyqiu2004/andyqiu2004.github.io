@@ -349,10 +349,6 @@ main {
   margin: 0 0 17px;
 }
 
-#personality .intro-copy p + p {
-  margin-top: 32px;
-}
-
 .intro-copy strong {
   color: var(--accent-dark);
   font-weight: 700;
