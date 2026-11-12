@@ -277,6 +277,10 @@ a {
   fill: currentColor;
 }
 
+.profile__wechat svg {
+  color: #07c160;
+}
+
 .profile__links {
   display: flex;
   flex-wrap: wrap;
